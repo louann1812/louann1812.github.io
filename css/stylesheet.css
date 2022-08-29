@@ -1,0 +1,195 @@
+@font-face {
+  font-family: anybody;
+  src: url(../fonts/anybody.ttf);
+}
+
+@font-face {
+  font-family: basteleur;
+  src: url(../fonts/basteleur.otf);
+}
+
+@font-face {
+  font-family: icons;
+  src: url(../fonts/icons.ttf);
+}
+
+@font-face {
+  font-family: general-m;
+  src: url(../fonts/general-m.otf);
+}
+
+@font-face {
+  font-family: general-r;
+  src: url(../fonts/general-r.otf);
+}
+
+body {
+  font-family: general-r;
+  height: 100%;
+  margin: 0;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 15rem;
+  font-family: anybody;
+}
+
+h2 {
+  position: absolute;
+  font-weight: normal;
+  font-size: 3.12em;
+  font-family: anybody;
+  top: 53.75vh;
+}
+  
+.header {
+  background-image: url('../pics/header.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100%;
+  animation: expand 15s ease-out forwards;
+}
+
+@keyframes expand {
+  0% {
+    background-size: 100% auto;
+  }
+  100% {
+    background-size: 107.5% auto;
+  }
+}
+
+.arrow {
+  position: relative;
+  bottom: 27.5vh;
+  left: 50vw;
+  font-size: 5em;
+  color: white;
+  opacity: 0;
+  animation: goDown 2s infinite ease-in;
+}
+
+@keyframes goDown {
+  0% {
+    transform: translate(0,-.5em);
+    opacity: 0;
+  }
+  80% {
+    transform: translate(0,-.5em);
+    opacity: 0;
+  }
+  90% {
+    opacity: 100;
+  }
+  100% {
+    transform: translate(0,0em);
+    opacity: 0;
+  }
+}
+
+.quote-container {
+  width: 100vw;
+  height: 67.5em;
+}
+
+.guillemet {
+  font-family: icons;
+  margin: 0em 0em 0em 0.3em;
+  position: relative;
+  top: 0.1em;
+  font-size: 25em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+  background-image: url(../gradients/mesh-198.png);
+  background-size: contain;
+}
+
+.quote {
+  position: absolute;
+  font-family: basteleur;
+  font-size: 5em;
+  margin: -1.1em 2.5em 0em 2.5em;
+}
+
+.lincoln {
+  position: relative;
+  top: 18.75em;
+  left: 82.5em;
+  width: 15em;
+  height: auto;
+}
+
+hr {
+  position: relative;
+  bottom: 9.25em;
+  margin: 0em 57em 0em 57em;
+}
+
+.hr-anim {
+  transition: 1s;
+  margin: 0em 7.5em 0em 7.5em;
+}
+
+.rctgl {
+  z-index: -9;
+  position: absolute;
+  left: 9em;
+  bottom: 20.3em;
+  width: 30em;
+  height: auto;
+  -webkit-clip-path: inset(30% 0 30% 0 round 100vw);
+  clip-path: inset(30% 0 30% 0 round 100vw);
+}
+
+.about {
+  position: relative;
+  top: 1.25em;
+  left: .675em;
+  color: white;
+  font-family: general-m;
+  font-size: 4.75em;
+  margin: 0em 0em 0em 1.5em;
+}
+
+.canva {
+  font-size: 2em;
+  margin: 4em 7.5em 7.5em 7.5em;
+}
+
+.about-gradient {
+  height: 100vh;
+}
+
+.columns {
+  background-image: url(gradients/mesh-614.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .2em;
+}
+
+.pics {
+  max-width: 33.33vw;
+  max-height: auto;
+  object-fit: contain;
+  border-radius: 1.5em;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
